@@ -5,6 +5,9 @@ import emoji
 import markdown2
 
 from slackviewer.user import User
+import sys
+reload(sys)
+sys.setdefaultencoding('utf8')
 
 class SlackFormatter(object):
     "This formats messages and provides access to workspace-wide data (user and channel metadata)."
